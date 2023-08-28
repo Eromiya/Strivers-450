@@ -21,18 +21,18 @@ public class SingleElementInSortedArray_540_Test {
 	@Test
 	public void test3() {
 		int[] nums3 = new int[] { 1, 5, 5, 7, 7, 9, 9 };
-		assertEquals(5, s.singleNonDuplicate(nums3));
+		assertEquals(1, s.singleNonDuplicate(nums3));
 	}
 
 	@Test
 	public void test4() {
 		int[] nums3 = new int[] { 1, 1, 11, 11, 111, 111 };
-		assertEquals(5, s.singleNonDuplicate(nums3));
+		assertEquals(0, s.singleNonDuplicate(nums3));
 	}
 
 	@Test
 	public void test5() {
 		int[] nums5 = new int[] { 1, 2, 2, 3, 3 };
-		assertEquals(5, s.singleNonDuplicate(nums5));
+		assertEquals(1, s.singleNonDuplicate(nums5));
 	}
 }
