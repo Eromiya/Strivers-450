@@ -20,7 +20,7 @@ public class RemoveDuplicates_26 {
 	 * @param nums
 	 * @return
 	 */
-	public int removeDuplicates(int[] nums) {
+	public int removeDuplicates1(int[] nums) {
 		int N = nums.length;
 		Set<Integer> set = new HashSet<>();
 		int itr = 0;
@@ -40,5 +40,43 @@ public class RemoveDuplicates_26 {
 			itr++;
 		}
 		return set.size();
+	}
+	
+	// Got new Optimized solution (Revision)
+	/**
+	 * Using 2 ptrs 
+	 * 1. Increment both until duplicate is found
+	 * 2. If duplicate found , 
+	 * 		2.1 increment j 
+	 *		2.2 if non duplicate found swap i+1 and j 
+	 * @param nums
+	 * @return
+	 */
+	public int removeDuplicates(int[] nums) {
+		
+		int i=0;
+		int j=1;
+		int n = nums.length;
+		boolean found = false;
+		while(j<n)
+		{
+			if(nums[i]==nums[j]) {
+				found = true;
+				j++;
+			}
+			else {
+				if(found) {
+					int temp = nums[j];
+					nums[j] = nums[i];
+					nums[i+1] = temp;
+					
+				}
+				i++;
+				j++;
+			}
+		}
+		
+		
+		return i+1 ;
 	}
 }
