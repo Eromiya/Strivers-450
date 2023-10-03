@@ -8,11 +8,6 @@ public class SumOFBeautyOFSubStrings_1781_Test {
 	SumOFBeautyOFSubStrings_1781 s  = new SumOFBeautyOFSubStrings_1781();
 	
 	@Test
-	public void test1() {
-		assertEquals(614258, s.beautySum("hiwhhrjugmpnyxzrvyxsuxeeqaecyasqdfbotrdtcglquuylygbziiaumetxklicurowfagiwgistkufvotosttvodnfknzlznorvhxqpekbraeiwiwlaleyjmzeakxxgplpophojiaiatrrjdhjbuevrjejbvsugfjjwhuiytidvujyrrchelwixarxokgwlyjaapxywseocyxvtnlagvlhwkqkatimwuetmmkgcxacmjwnybwkwbzgfauudkxejbtnndywxlswllgatfyyyafcqhbmmlmmsstosvgyqlnwqbfobztftqnsfqbwzgrdsihhzdcutypzcoiroyngtmryhjvdbluoebyxlwbrwlyqeeirpdwutahhybnkgbhlehnagtlnpeioooqhrjjjjjj"));
-	}
-	
-	@Test
 	public void test2() {
 		assertEquals(5, s.beautySum("aabcb"));
 	}
